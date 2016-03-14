@@ -12,8 +12,8 @@ recipes:
 - sprout-osx-apps::shiftit
 
 # settings
-- sprout-osx-settings
-- sprout-osx-settings::dock_preferences
+#- sprout-osx-settings
+#- sprout-osx-settings::dock_preferences
 - sprout-terminal
 - sprout-ssh::known_hosts_github
 
@@ -27,33 +27,28 @@ recipes:
 # development (rails)
 - sprout-rbenv
 - sprout-ruby
-- sprout-mysql
-- sprout-postgresql
+#- sprout-mysql
+#- sprout-postgresql
 
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::rubymine
+#- sprout-osx-apps::textmate_preferences
+#- sprout-jetbrains-editors::rubymine
 
 node_attributes:
   sprout:
     git:
-      domain: pivotallabs.com
+      domain: pnwsw.com
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
+        - initials: sg
+          name: Sean Goller
+          username: sean.goller
+        - initials: sj
+          name: Sannidhi Jalukar
+          username: sannidhi.jalukar
         - initials: lw
           name: Luke Winikates
-          username: lwinikates
+          username: luke.winikates
       projects:
-        -
-          name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -80,17 +75,17 @@ node_attributes:
       - wget
       - rbenv-binstubs
     casks:
-      - firefox
-      - flycut
-      - rowanj-gitx
-      - github-desktop
-      - google-chrome
-      - google-drive
-      - google-hangouts
-      - macvim
-      - skype
-      - textmate
-      - vagrant
-      - virtualbox
-      - xquartz
-      - xscope
+#      - firefox
+#      - flycut
+#      - rowanj-gitx
+#      - github-desktop
+#      - google-chrome
+#      - google-drive
+#      - google-hangouts
+#      - macvim
+#      - skype
+#      - textmate
+#      - vagrant
+#      - virtualbox
+#      - xquartz
+#      - xscope
