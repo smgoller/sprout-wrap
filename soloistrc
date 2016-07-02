@@ -28,12 +28,11 @@ recipes:
 # development (rails)
 - sprout-rbenv
 - sprout-ruby
-- sprout-mysql
 - sprout-postgresql
 
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
 - sprout-jetbrains-editors::rubymine
+- sprout-jetbrains-editors::intellij
 
 node_attributes:
   sprout:
@@ -51,10 +50,13 @@ node_attributes:
         - initials: lw
           name: Luke Winikates
           username: lwinikates
+        - initials: sg
+          name: Sean Goller
+          username: sgoller
       projects:
         -
           name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+          url: https://github.com/smgoller/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -78,6 +80,7 @@ node_attributes:
       - pstree
       - qt
       - ssh-copy-id
+      - tig
       - tmux
       - tree
       - watch
@@ -91,10 +94,5 @@ node_attributes:
       - google-chrome
       - google-drive
       - google-hangouts
-      - macvim
-      - skype
-      - textmate
-      - vagrant
-      - virtualbox
       - xquartz
       - xscope
