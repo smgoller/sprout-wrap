@@ -129,6 +129,15 @@ GIT
       osx (>= 0.0.0)
       sprout-base (>= 0.0.0)
 
+GIT
+  remote: https://github.com/pivotal-sprout/sprout-vim
+  ref: master
+  sha: ae0e0955a8fe27c05685b5c4551b563c90fe08ba
+  specs:
+    sprout-vim (0.3.0)
+      homebrew (>= 0.0.0)
+      sprout-base (>= 0.0.0)
+
 DEPENDENCIES
   build-essential (= 3.2.0)
   mingw (= 0.1.1)
@@ -145,4 +154,5 @@ DEPENDENCIES
   sprout-ruby (>= 0)
   sprout-ssh (>= 0)
   sprout-terminal (>= 0)
+  sprout-vim (>= 0)
 

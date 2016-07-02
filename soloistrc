@@ -24,6 +24,7 @@ recipes:
 - sprout-git::default_editor
 - sprout-git::projects
 - sprout-git::git_scripts
+- sprout-git::git_duet
 
 # development (rails)
 - sprout-rbenv
@@ -33,6 +34,7 @@ recipes:
 # apps (editors)
 - sprout-jetbrains-editors::rubymine
 - sprout-jetbrains-editors::intellij
+- sprout-vim
 
 node_attributes:
   sprout:
@@ -94,5 +96,7 @@ node_attributes:
       - google-chrome
       - google-drive
       - google-hangouts
+      - shiftit
+      - tunnelblick
       - xquartz
       - xscope
