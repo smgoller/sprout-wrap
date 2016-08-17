@@ -4,6 +4,7 @@ recipes:
 - sprout-base
 - sprout-base::bash_it
 - homebrew
+- homebrew::install_taps
 - homebrew::install_formulas
 - homebrew::install_casks
 
@@ -37,7 +38,7 @@ recipes:
 node_attributes:
   sprout:
     git:
-      domain: pivotallabs.com
+      domain: pivotal.io
       authors:
         - initials: ah
           name: Abhijit Hiremagalur
@@ -65,8 +66,11 @@ node_attributes:
       tile_size: 35
       magnification: false
   homebrew:
+    taps:
+      - universal-ctags/universal-ctags
     formulas:
-      - ctags-exuberant
+      - name: universal-ctags
+        head: true
       - ag
       - chromedriver
       - imagemagick
